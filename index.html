@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Read File (via User Input selection)</title>
+    <link rel="stylesheet" type="text/css" href="CSS/reader.css" />
+    <!--<link href='http://www.youziku.com/webfont/CSS/085a85e96e30ce1709fa4d899002cc8c' rel='stylesheet' type='text/css' />-->
+</head>
+<script src="JS/reader.js"></script>
+<body onload="checkFileAPI();">
+<div class="shuli">
+    <input type="file" onchange='readText(this)' />
+    <br/>
+    <hr/>
+    <h3>文件内容是:</h3>
+    <div id="main">
+
+    </div>
+</div>
+<script src="JS/pager.js"></script>
+</body>
+</html>
