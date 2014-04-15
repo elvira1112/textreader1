@@ -4,7 +4,7 @@
 function Pager(item){
     if (!item) return;
     this.obj = item;                                                           //分页对象
-    this._pageSize = this.obj.clientWidth;                                 //可见页面大小
+    this._pageSize = 1008;                                                    //可见页面大小
     this._recordCount = this.obj.scrollWidth;                             //总大小
     this._pageIndex =  1;                                                    //当前页
     this._pageCount = Math.ceil(this._recordCount/this._pageSize);     //总页数
